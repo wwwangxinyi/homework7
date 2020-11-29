@@ -28,7 +28,7 @@ function gettingJSON(){
     let query;
     
     // Your code here.  
-    query ="http://api.openweathermap.org/data/2.5/weather?q="+ location +"&appid="+key+"&units="+format;
+    query ="https://api.openweathermap.org/data/2.5/weather?q="+ location +"&appid="+key+"&units="+format;
     
     console.log("Query is :" + query);
 
@@ -46,10 +46,4 @@ function gettingJSON(){
         document.getElementById("tempImg").src = "http://openweathermap.org/img/wn/"+ json['weather']['0']['icon'] +"@2x.png";
 
     });
-}
-
-
-window.onload = function(){
-		$('.fahrenheit').removeClass('checked')
-		$('.celcius').removeClass('checked')
 }
